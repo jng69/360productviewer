@@ -1,0 +1,93 @@
+/* Add your existing CSS styles here */
+/* Reset default browser styles for sliders and thumbs */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.product-viewer {
+    text-align: center;
+}
+
+.product-container {
+    position: relative;
+    max-width: 500px;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    overflow: hidden;
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+
+#product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.slider-container {
+    position: absolute;
+    max-width: 500px;
+    top: 2px;
+    width: 90%;
+    z-index: 1;
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+
+/* Customize the slider track (scrollbar) */
+.slider {
+    width: 100%;
+    background-color: gray; /* Change the background color as needed */
+    height: 2px; /* Adjust the height as needed */
+    border-radius: 4px; /* Adjust the border radius as needed */
+}
+
+/* Customize the slider thumb (button) */
+.slider::-webkit-slider-thumb {
+    width: 20px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-color: white; /* Change the thumb color as needed */
+    border: 1px solid gray; /* Add a border if desired */
+    border-radius: 50%; /* Create a round thumb */
+    cursor: pointer; /* Add a pointer cursor for user interaction */
+    -webkit-appearance: none; /* Remove the default appearance on webkit browsers */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-color: green; /* Change the thumb color as needed */
+    border: 2px solid green; /* Add a border if desired */
+    border-radius: 50%; /* Create a round thumb */
+    cursor: pointer; /* Add a pointer cursor for user interaction */
+}
+
+.slider::-ms-thumb {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-color: black; /* Change the thumb color as needed */
+    border: 2px solid black; /* Add a border if desired */
+    border-radius: 50%; /* Create a round thumb */
+    cursor: pointer; /* Add a pointer cursor for user interaction */
+}
+
+/* Customize the slider thumb (button) on iOS Safari */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+/* Customize the slider thumb (button) on Firefox */
+.slider::-moz-range-thumb {
+    -moz-appearance: none;
+}
+
+/* Customize the slider thumb (button) on Internet Explorer/Edge */
+.slider::-ms-thumb {
+    appearance: none;
+}
