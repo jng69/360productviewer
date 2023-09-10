@@ -91,3 +91,28 @@ input[type="range"] {
 .slider::-ms-thumb {
     appearance: none;
 }
+
+
+
+.panoramic-icon {
+    position: absolute;
+    top: 0px;
+    margin-left:50%;
+    transform:translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background: transparent url('product/369icon.png') no-repeat;
+    background-position: center;
+    background-size:20%;
+    opacity: 1;
+    border: none;
+    pointer-events: none;
+    cursor: none;
+    z-index: 1;
+    animation: forwards 0.5s fadeOut 4s;
+}
+
+@keyframes fadeOut { 
+    0% { opacity: 1; visibility: visible; } 
+    100% { opacity: 0; visibility: hidden;  }
+}
